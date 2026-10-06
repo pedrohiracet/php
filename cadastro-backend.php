@@ -56,7 +56,7 @@ if( count($erros) > 0 ){
     if (isset($_FILES['foto']) && $_FILES['foto']['error'] === UPLOAD_ERR_OK) {
         $extensao = pathinfo($_FILES['foto']['name'], PATHINFO_EXTENSION);
         $novo_nome = uniqid() . "." . $extensao;
-        $destino = "usuarios/" . $novo_nome;
+        $destino = "fotos/" . $novo_nome;
 
         if (move_uploaded_file($_FILES['foto']['tmp_name'], $destino)) {
             $nome_foto = $novo_nome;
