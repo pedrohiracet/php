@@ -122,3 +122,7 @@ header a:hover{
     background-color: red;
     color: white;
 }
+
+header div img{
+    border: 5px solid lightblue;
+}

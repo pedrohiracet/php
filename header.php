@@ -1,3 +1,4 @@
+    <link rel="stylesheet" href="style.css">
     <?php
     session_start();
     include_once('conexao.php');
@@ -14,10 +15,11 @@
 
 <header>
     <div>
-        <img class="foto" src="usuarios/<?=$usuario['foto']?>" >
+        <img class="foto" src="fotos/<?=$usuario['foto']?>" >
         <h2><?=$usuario['nome']?></h2>
     </div>
     <div>
+        <a href="perfil.php?id=">Perfil</a>
         <a href="index.php">Page.Principal</a>
         <a href="logout.php">Desconectar</a>
     </div>
